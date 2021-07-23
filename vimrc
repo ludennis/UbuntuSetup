@@ -18,3 +18,10 @@ let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
 let g:cpp_experimental_simple_template_highlight = 1
+
+" set vim to chdir for each file
+if exists('+autochdir')
+    set autochdir
+else
+    autocmd BufEnter * silent! lcd %:p:h:gs/ /\\ /
+endif
