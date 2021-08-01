@@ -25,3 +25,5 @@ if exists('+autochdir')
 else
     autocmd BufEnter * silent! lcd %:p:h:gs/ /\\ /
 endif
+
+set colorcolumn=80
