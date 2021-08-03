@@ -26,4 +26,4 @@ else
     autocmd BufEnter * silent! lcd %:p:h:gs/ /\\ /
 endif
 
-set colorcolumn=80
+set colorcolumn=100
