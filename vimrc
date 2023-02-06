@@ -27,3 +27,6 @@ else
 endif
 
 set colorcolumn=100
+
+set laststatus=2
+set statusline+=%F
