@@ -1,3 +1,4 @@
+" basic settings
 set tabstop=2
 set expandtab
 set ignorecase
@@ -26,7 +27,18 @@ else
     autocmd BufEnter * silent! lcd %:p:h:gs/ /\\ /
 endif
 
-set colorcolumn=100
+set colorcolumn=120
 
+" dracula colorscheme
+if v:version < 802
+    packadd! dracula
+endif
+syntax enable
+colorscheme dracula
+
+" for using universal ctags
+set tags=./tags;
+
+" showing current filename
 set laststatus=2
 set statusline+=%F
