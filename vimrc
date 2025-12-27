@@ -1,5 +1,4 @@
-" basic settings
-set tabstop=2
+set tabstop=4
 set expandtab
 set ignorecase
 set hlsearch
@@ -7,6 +6,9 @@ set number
 set wrap!
 set listchars=trail:$
 set list
+set autoindent
+set cindent
+set shiftwidth=4
 
 au BufWinLeave ?* mkview 1
 au BufWinEnter ?* silent loadview 1
